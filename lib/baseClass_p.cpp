@@ -10,6 +10,7 @@
 
 namespace core {
     namespace base {
+        baseClassPrivate::baseClassPrivate(baseClass *base) : q_ptr(base) {}
         void baseClassPrivate::setName(const QString &name) {
             mName = name;
         }

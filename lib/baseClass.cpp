@@ -23,8 +23,13 @@ namespace core {
 
         }
         void baseClass::setName(const QString &name) {
-            Q_Q(baseClass);
+            Q_D(baseClass);
             d->setName(name);
+        }
+
+        const QString baseClass::getName() {
+            Q_D(baseClass);
+            return d->mName;
         }
     }
 }

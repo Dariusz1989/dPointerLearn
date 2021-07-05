@@ -7,12 +7,14 @@
 */
 
 #include "inherited_p.h"
+#include "inherited.h"
 
 namespace extra {
     namespace controllers {
         inheritedPrivate::inheritedPrivate(inherited *item) : core::base::baseClassPrivate(item) {
 
         }
+
         inheritedPrivate::~inheritedPrivate() {
 
         }

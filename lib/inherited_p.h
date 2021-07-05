@@ -9,16 +9,16 @@
 #ifndef SIMPLE_01_INHERITED_P_H
 #define SIMPLE_01_INHERITED_P_H
 
-#include "inherited.h"
 #include "baseClass_p.h"
 
 namespace extra {
     namespace controllers {
+        class inherited;
         class inheritedPrivate : public core::base::baseClassPrivate {
-            Q_DECLARE_PUBLIC(inherited);
+            //Q_DECLARE_PUBLIC(inherited);
         public:
             inheritedPrivate(inherited *item);
-~inheritedPrivate();
+            ~inheritedPrivate();
         };
 
     }

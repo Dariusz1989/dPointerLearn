@@ -23,6 +23,7 @@ namespace core {
             baseClass();
             ~baseClass();
             void setName(const QString&name);
+            const QString getName();
         protected:
             baseClass(baseClassPrivate &d);
             baseClassPrivate *d_ptr;

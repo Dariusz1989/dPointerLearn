@@ -19,7 +19,7 @@ namespace core {
             Q_DECLARE_PUBLIC(baseClass);
             QString mName;
         public:
-            baseClassPrivate(baseClass *base) : q_ptr(base) {};
+            baseClassPrivate(baseClass *base);
             void setName(const QString&name);
         protected:
             baseClass *q_ptr;
