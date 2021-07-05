@@ -11,7 +11,6 @@
 
 #include <qobject.h>
 #include "baseClass.h"
-//#include "inherited_p.h"
 
 
 namespace extra {

@@ -10,12 +10,13 @@
 #define SIMPLE_01_INHERITED_P_H
 
 #include "baseClass_p.h"
+#include "inherited.h"
 
 namespace extra {
     namespace controllers {
         class inherited;
         class inheritedPrivate : public core::base::baseClassPrivate {
-            //Q_DECLARE_PUBLIC(inherited);
+            Q_DECLARE_PUBLIC(inherited);
         public:
             inheritedPrivate(inherited *item);
             ~inheritedPrivate();
