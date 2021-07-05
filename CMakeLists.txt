@@ -11,7 +11,7 @@ set(REQUIRED_LIBS Core Gui Widgets OpenGL  OpenGLWidgets)
 set(REQUIRED_LIBS_QUALIFIED Qt6::Core Qt6::Gui Qt6::Widgets Qt6::OpenGL  Qt6::OpenGLWidgets)
 set(CMAKE_PREFIX_PATH "C:/Qt/6.1.2/msvc2019_64")
 
-add_executable(${PROJECT_NAME} main.cpp lib/baseClass.cpp lib/baseClass.h lib/controller.cpp lib/controller.h lib/baseClass_p.cpp lib/baseClass_p.h lib/inherited.cpp lib/inherited.h lib/inherited_p.cpp lib/inherited_p.h)
+add_executable(${PROJECT_NAME} main.cpp lib/baseClass.cpp lib/baseClass.h lib/baseClass_p.cpp lib/baseClass_p.h lib/inherited.cpp lib/inherited.h lib/inherited_p.cpp lib/inherited_p.h)
 
 if (NOT CMAKE_PREFIX_PATH)
     message(WARNING "CMAKE_PREFIX_PATH is not defined, you may need to set it "
